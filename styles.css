@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+img {
+  min-height: 200px;
+  background-color: #e0e0e0;
+  display: block;
+  margin: 10px auto;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1000ms ease-out;
+}
+
+img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
